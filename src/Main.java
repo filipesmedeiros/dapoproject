@@ -36,10 +36,10 @@ public class Main {
         }
     }
 
-    private static int greedyAlgorithm01Knapsack(List<KnapsackObject> objects, int limit) {
+    private static int greedyAlgorithm01Knapsack(List<KnapsackObject> objects, int limit, int instance) {
 
         Set<KnapsackObject> solution = new HashSet<>();
-        TreeMap<Float, KnapsackObject> sortedObjects = new TreeMap<>();
+        TreeMap<Float, KnapsackObject> sortedObjects = new TreeMap<>((x, y) -> x < y ? 1 : x.equals(y) ? 0 : -1);
 
         // Time complexity - O(n*log(n)) where n = number of objects
         // For each iteration, insertion in O(log(n))
@@ -54,7 +54,7 @@ public class Main {
 
         // Linear time and space complexity - O(n) where n = number of objects
         // All operations inside are constant in time and space
-        sortedObjects.descendingMap().forEach((profit, object) -> {
+        sortedObjects.forEach((profit, object) -> {
             if(currentWeight.get() + object.weight() <= limit) {
                 currentWeight.accumulateAndGet(object.weight(), (x, y) -> x + y);
                 solution.add(object);
@@ -68,72 +68,102 @@ public class Main {
         });
 
         if(maxValue.get() > currentWeight.get()) {
-            System.out.println("The computed solution for this problem is (using a greedy algorithm):");
-            System.out.print(" { weight: " + maxObject.get().weight() +
+            System.out.println("  The computed solution for instance " + instance + " is (using a greedy algorithm):");
+            System.out.print("    { weight: " + maxObject.get().weight() +
                     " }, { value: " + maxObject.get().value() + " }");
 
+            // Space and time complexity - O(1)
             return maxObject.get().value();
         } else {
-            System.out.println("The computed solution for this problem is (using a greedy algorithm):");
-            solution.forEach(object -> System.out.print(" { weight: " + object.weight() +
+            System.out.println("  The computed solution for instance " + instance + " is (using a greedy algorithm):");
+            solution.forEach(object -> System.out.print("    \n{ weight: " + object.weight() +
                     " }, { value: " + object.value() + " }"));
 
+            // Space and time complexity - O(1)
             return currentValue.get();
         }
     }
 
-    public static int dynamic01Knapsack(List<KnapsackObject> objects, int limit) {
-        Pair<Set<KnapsackObject>, Integer>[][] dynamicTable = new Pair[objects.size()][limit];
+    private static int dynamic01Knapsack(List<KnapsackObject> objects, int limit, int instance) {
 
-        System.out.println("\n");
+        // Note: Since used list is ArrayList, all get operations of the list are O(1) in time complexity
 
-        for(int i = 0; i < limit; i++)
+        // Note: Both the space complexity of the dynamic table and the time complexity of the loop that fills
+        // the table have one extra n because my implementation wants to store the actual objects of the solution
+        // and not just its value. It would be very easy to just remove the HashSets (and consequently, all the
+        // operations on them) from the table, and reduce the space and time complexity to O(n * limit)
+
+        // Space complexity - O(n^2 * limit) where n = number of objects and limit = maximum weight in knapsack
+        Pair<Set<KnapsackObject>, Integer>[][] dynamicTable = new Pair[objects.size() + 1][limit + 1];
+
+        // Time complexity - O(limit) where limit = maximum weight in knapsack
+        for(int i = 0; i < limit + 1; i++)
             dynamicTable[0][i] = new Pair<>(new HashSet<>(), 0);
 
-        for(int i = 0; i < objects.size(); i++)
+        // Time complexity - O(n) where n = number of objects
+        for(int i = 0; i < objects.size() + 1; i++)
             dynamicTable[i][0] = new Pair<>(new HashSet<>(), 0);
 
-        for(int i = 1; i < objects.size(); i++)
-            for(int j = 1; j < limit; j++) {
-                if(objects.get(i).weight() > j)
+        // Time complexity - O(n^2 * limit) where n = number of objects and limit = maximum weight in knapsack
+        for(int i = 1; i < objects.size() + 1; i++)
+            for(int j = 1; j < limit + 1; j++) {
+
+                KnapsackObject object = objects.get(i - 1);
+
+                // Everything in this if clause is constant in time complexity
+                if(object.weight() > j)
                     dynamicTable[i][j] = new Pair<>(dynamicTable[i - 1][j].key(),
                             dynamicTable[i - 1][j].value());
                 else {
-                    boolean putThisOne = objects.get(i).value() +
-                            dynamicTable[i - 1][j - objects.get(i).weight()].value()
+                    // Time and space complexity - O(1)
+                    boolean putThisOne = object.value() +
+                            dynamicTable[i - 1][j - object.weight()].value()
                             > dynamicTable[i - 1][j].value();
 
                     Set<KnapsackObject> temp;
 
                     if(putThisOne) {
-                        temp = new HashSet<>(dynamicTable[i - 1][j - objects.get(i).weight()].key());
-                        temp.add(objects.get(i));
-                        dynamicTable[i][j] = new Pair<>(temp, objects.get(i).value() +
-                                dynamicTable[i - 1][j - objects.get(i).weight()].value());
+                        // Time complexity - O(n) where n = number of elements
+                        temp = new HashSet<>(dynamicTable[i - 1][j - object.weight()].key());
+
+                        // Space and time complexity - O(1)?
+                        // I think the above operation creates a new HashSet from the given one, but with capacity and load
+                        // factors such that adding a new element makes the program have to resize the set, in which case
+                        // this new addition will be very time expensive (O(n)). If so, creating a new HashSet manually would
+                        // fix this
+                        temp.add(object);
+
+                        // Space and time complexity - O(1)
+                        dynamicTable[i][j] = new Pair<>(temp, object.value() +
+                                dynamicTable[i - 1][j - object.weight()].value());
                     } else {
+                        // Time complexity - O(n) where n = number of elements
                         temp = new HashSet<>(dynamicTable[i - 1][j].key());
+
+                        // Space and time complexity - O(1)
                         dynamicTable[i][j] = new Pair<>(temp, dynamicTable[i - 1][j].value());
                     }
                 }
-
-                if(j == limit - 1)
-                    System.out.println(dynamicTable[i][j].value());
-                else
-                    System.out.print(dynamicTable[i][j].value() + " " + (Integer.toString(dynamicTable[i][j].value()).length() == 1 ? " " : ""));
             }
 
-        System.out.println("\n\nThe computed solution for this problem is (using dynamic programming):");
-        dynamicTable[objects.size() - 1][limit - 1].key().forEach(object -> System.out.print(" { weight: " + object.weight() +
-                " }, { value: " + object.value() + " }"));
+        System.out.println("\n\n  The computed solution for instance " + instance + " is (using dynamic programming):");
+        dynamicTable[objects.size()][limit].key().forEach(object -> System.out.print("    { weight: " + object.weight() +
+                " }, { value: " + object.value() + " }\n"));
 
-        return dynamicTable[objects.size() - 1][limit - 1].value();
+        // Space and time complexity - O(1)
+        return dynamicTable[objects.size()][limit].value();
     }
 
     public static void main(String[] args)
             throws Exception {
-        Pair<List<KnapsackObject>, Integer> parsed = parseSetFromJSON("instances/instance1.json");
-        greedyAlgorithm01Knapsack(parsed.key(), parsed.value());
-        dynamic01Knapsack(parsed.key(), parsed.value());
+
+        for(int i = 1; i < 3; i++) {
+            Pair<List<KnapsackObject>, Integer> parsed = parseSetFromJSON("instances/instance" + i + ".json");
+            System.out.println(" ------ Computing solutions for instance " + i + " ------ \n");
+            System.out.println("\n    Total value = " + greedyAlgorithm01Knapsack(parsed.key(), parsed.value(), i));
+            System.out.println("    Total value = " + dynamic01Knapsack(parsed.key(), parsed.value(), i));
+            System.out.println("\n\n ------ x ------");
+        }
     }
 
     static class Pair<K, V> {
