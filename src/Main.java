@@ -84,6 +84,7 @@ public class Main {
         }
     }
 
+    @SuppressWarnings("all")
     private static int dynamic01Knapsack(List<KnapsackObject> objects, int limit, int instance) {
 
         // Note: Since used list is ArrayList, all get operations of the list are O(1) in time complexity
@@ -182,10 +183,6 @@ public class Main {
 
         V value() {
             return value;
-        }
-
-        void setKey(K key) {
-            this.key = key;
         }
 
         void setValue(V value) {
