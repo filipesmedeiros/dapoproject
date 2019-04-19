@@ -1,33 +1,34 @@
 {
-  "limit": "40",
+  "limit": 40,
+  "objectNumber": 7,
   "set": [
     {
-      "weight": "22",
-      "value": "30"
+      "weight": 22,
+      "value": 30
     },
     {
-      "weight": "11",
-      "value": "29"
+      "weight": 11,
+      "value": 29
     },
     {
-      "weight": "31",
-      "value": "52"
+      "weight": 39,
+      "value": 52
     },
     {
-      "weight": "27",
-      "value": "16"
+      "weight": 27,
+      "value": 16
     },
     {
-      "weight": "19",
-      "value": "23"
+      "weight": 19,
+      "value": 23
     },
     {
-      "weight": "4",
-      "value": "20"
+      "weight": 4,
+      "value": 20
     },
     {
-      "weight": "40",
-      "value": "71"
+      "weight": 40,
+      "value": 100
     }
   ]
 }
