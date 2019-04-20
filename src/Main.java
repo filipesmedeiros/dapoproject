@@ -58,7 +58,7 @@ public class Main {
         sortedObjects.forEach((profit, object) -> {
             if(currentWeight.get() + object.weight() <= limit) {
                 currentWeight.accumulateAndGet(object.weight(), (x, y) -> x + y);
-                solution.add(object);
+                // solution.add(object);
                 currentValue.accumulateAndGet(object.value(), (x, y) -> x + y);
             }
 
