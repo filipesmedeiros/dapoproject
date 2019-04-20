@@ -39,7 +39,7 @@ public class Main {
     }
 
     private static int greedy01Knapsack(List<KnapsackObject> objects, int limit) {
-        Set<KnapsackObject> solution = new HashSet<>(objects.size());
+        // Set<KnapsackObject> solution = new HashSet<>(objects.size());
         TreeMap<Float, KnapsackObject> sortedObjects = new TreeMap<>((x, y) -> x < y ? 1 : x.equals(y) ? 0 : -1);
 
         // Time complexity - O(n*log(n)) where n = number of objects
