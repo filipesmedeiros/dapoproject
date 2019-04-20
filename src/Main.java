@@ -88,70 +88,71 @@ public class Main {
 
         // Note: Since used list is ArrayList, all get operations of the list are O(1) in time complexity
 
-        // Note: Both the space complexity of the dynamic table and the time complexity of the loop that fills
-        // the table have one extra n because my implementation wants to store the actual objects of the solution
-        // and not just its value. It would be very easy to just remove the HashSets (and consequently, all the
-        // operations on them) from the table, and reduce the space and time complexity to O(n * limit)
-
+        // Time complexity - O(n * limit) where n = number of objects and limit = maximum weight in knapsack
         // Space complexity - O(n^2 * limit) where n = number of objects and limit = maximum weight in knapsack
-        Pair<Set<KnapsackObject>, Integer>[][] dynamicTable = new Pair[objects.size() + 1][limit + 1];
+        int[][] dynamicTable = new int[objects.size() + 1][limit + 1];
 
         // Time complexity - O(limit) where limit = maximum weight in knapsack
         for(int i = 0; i < limit + 1; i++)
-            dynamicTable[0][i] = new Pair<>(new HashSet<>(), 0);
+            dynamicTable[0][i] = 0;
 
         // Time complexity - O(n) where n = number of objects
         for(int i = 0; i < objects.size() + 1; i++)
-            dynamicTable[i][0] = new Pair<>(new HashSet<>(), 0);
+            dynamicTable[i][0] = 0;
 
         // Time complexity - O(n^2 * limit) where n = number of objects and limit = maximum weight in knapsack
         for(int i = 1; i < objects.size() + 1; i++)
             for(int j = 1; j < limit + 1; j++) {
-
                 KnapsackObject object = objects.get(i - 1);
 
                 // Everything in this if clause is constant in time complexity
                 if(object.weight() > j)
-                    dynamicTable[i][j] = new Pair<>(dynamicTable[i - 1][j].key(),
-                            dynamicTable[i - 1][j].value());
+                    dynamicTable[i][j] = dynamicTable[i - 1][j];
                 else {
                     // Time and space complexity - O(1)
                     boolean putThisOne = object.value() +
-                            dynamicTable[i - 1][j - object.weight()].value()
-                            > dynamicTable[i - 1][j].value();
-
-                    Set<KnapsackObject> temp;
+                            dynamicTable[i - 1][j - object.weight()]
+                            > dynamicTable[i - 1][j];
 
                     if(putThisOne) {
-                        // Time complexity - O(n) where n = number of elements
-                        temp = new HashSet<>(dynamicTable[i - 1][j - object.weight()].key());
-
-                        // Space and time complexity - O(1)?
-                        // I think the above operation creates a new HashSet from the given one, but with capacity and load
-                        // factors such that adding a new element makes the program have to resize the set, in which case
-                        // this new addition will be very time expensive (O(n)). If so, creating a new HashSet manually would
-                        // fix this
-                        temp.add(object);
-
                         // Space and time complexity - O(1)
-                        dynamicTable[i][j] = new Pair<>(temp, object.value() +
-                                dynamicTable[i - 1][j - object.weight()].value());
+                        dynamicTable[i][j] = object.value() +
+                                dynamicTable[i - 1][j - object.weight()];
                     } else {
-                        // Time complexity - O(n) where n = number of elements
-                        temp = new HashSet<>(dynamicTable[i - 1][j].key());
-
                         // Space and time complexity - O(1)
-                        dynamicTable[i][j] = new Pair<>(temp, dynamicTable[i - 1][j].value());
+                        dynamicTable[i][j] = dynamicTable[i - 1][j];
                     }
                 }
             }
 
+        // Time complexity - O(1)
+        // Space complexity - O(n) where n = number of objects
+        HashSet<KnapsackObject> solution = new HashSet<>(objects.size());
+
+        int i = dynamicTable.length - 1;
+        int j = dynamicTable[0].length - 1;
+
+        // Time complexity - O(n) where n = number of objects, since only iterate that dimension of the matrix
+        // The other dimension is a helper to decide what cell to evaluate next
+        for(;;) {
+            if(dynamicTable[i][j] != dynamicTable[i - 1][j]) {
+                solution.add(objects.get(i - 1));
+                j -= objects.get(i - 1).weight();
+            }
+
+            i--;
+
+            if(i == 0 || j == 0)
+                break;
+        }
+
+
         System.out.println("\n\n  The computed solution for instance " + instance + " is (using dynamic programming):");
-        dynamicTable[objects.size()][limit].key().forEach(object -> System.out.print("    { weight: " + object.weight() +
+        solution.forEach(object -> System.out.print("    { weight: " + object.weight() +
                 " }, { value: " + object.value() + " }\n"));
 
         // Space and time complexity - O(1)
-        return dynamicTable[objects.size()][limit].value();
+        return dynamicTable[objects.size()][limit];
     }
 
     public static void main(String[] args)
