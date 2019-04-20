@@ -3,7 +3,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicReference;
-
 import org.json.*;
 
 public class Main {
@@ -38,11 +37,11 @@ public class Main {
 
     private static int greedyAlgorithm01Knapsack(List<KnapsackObject> objects, int limit, int instance) {
 
-        Set<KnapsackObject> solution = new HashSet<>();
+        Set<KnapsackObject> solution = new HashSet<>(objects.size());
         TreeMap<Float, KnapsackObject> sortedObjects = new TreeMap<>((x, y) -> x < y ? 1 : x.equals(y) ? 0 : -1);
 
         // Time complexity - O(n*log(n)) where n = number of objects
-        // For each iteration, insertion in O(log(n))
+        // For each iteration, insertion is O(log(n))
         // Space complexity - O(n) where n = number of objects
         objects.forEach(object -> sortedObjects.put(1.0f * object.value() / object.weight(), object));
 
