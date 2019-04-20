@@ -15,4 +15,8 @@ class KnapsackObject {
     int value() {
         return value;
     }
+
+    void setValue(int value) {
+        this.value = value;
+    }
 }

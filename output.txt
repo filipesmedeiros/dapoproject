@@ -1,0 +1,2404 @@
+ ------ Computing solutions for instance 0 of generator 1 ------ 
+
+    Optimal solution = 764
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 462
+    Performance = 462 / 764 = 0.6047120418848168
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 574
+    Performance = 574 / 764 = 0.7513089005235603
+------ x ------
+ ------ Computing solutions for instance 1 of generator 1 ------ 
+
+    Optimal solution = 699
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 374
+    Performance = 374 / 699 = 0.5350500715307582
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 525
+    Performance = 525 / 699 = 0.7510729613733905
+------ x ------
+ ------ Computing solutions for instance 2 of generator 1 ------ 
+
+    Optimal solution = 414
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 189
+    Performance = 189 / 414 = 0.45652173913043476
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 311
+    Performance = 311 / 414 = 0.751207729468599
+------ x ------
+ ------ Computing solutions for instance 3 of generator 1 ------ 
+
+    Optimal solution = 851
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 480
+    Performance = 480 / 851 = 0.564042303172738
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 639
+    Performance = 639 / 851 = 0.7508813160987075
+------ x ------
+ ------ Computing solutions for instance 4 of generator 1 ------ 
+
+    Optimal solution = 744
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 430
+    Performance = 430 / 744 = 0.5779569892473119
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 559
+    Performance = 559 / 744 = 0.7513440860215054
+------ x ------
+ ------ Computing solutions for instance 0 of generator 2 ------ 
+
+    Optimal solution = 674
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 658
+    Performance = 658 / 674 = 0.9762611275964391
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 510
+    Performance = 510 / 674 = 0.7566765578635015
+------ x ------
+ ------ Computing solutions for instance 1 of generator 2 ------ 
+
+    Optimal solution = 528
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 528
+    Performance = 528 / 528 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 397
+    Performance = 397 / 528 = 0.7518939393939394
+------ x ------
+ ------ Computing solutions for instance 2 of generator 2 ------ 
+
+    Optimal solution = 352
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 333
+    Performance = 333 / 352 = 0.9460227272727273
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 265
+    Performance = 265 / 352 = 0.7528409090909091
+------ x ------
+ ------ Computing solutions for instance 3 of generator 2 ------ 
+
+    Optimal solution = 792
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 792
+    Performance = 792 / 792 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 597
+    Performance = 597 / 792 = 0.7537878787878788
+------ x ------
+ ------ Computing solutions for instance 4 of generator 2 ------ 
+
+    Optimal solution = 448
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 442
+    Performance = 442 / 448 = 0.9866071428571429
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 339
+    Performance = 339 / 448 = 0.7566964285714286
+------ x ------
+ ------ Computing solutions for instance 0 of generator 3 ------ 
+
+    Optimal solution = 3250
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 299
+    Performance = 299 / 3250 = 0.092
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 2444
+    Performance = 2444 / 3250 = 0.752
+------ x ------
+ ------ Computing solutions for instance 1 of generator 3 ------ 
+
+    Optimal solution = 4679
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4679
+    Performance = 4679 / 4679 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3519
+    Performance = 3519 / 4679 = 0.7520837785851677
+------ x ------
+ ------ Computing solutions for instance 2 of generator 3 ------ 
+
+    Optimal solution = 4071
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 298
+    Performance = 298 / 4071 = 0.07320068779169737
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3061
+    Performance = 3061 / 4071 = 0.7519037091623679
+------ x ------
+ ------ Computing solutions for instance 3 of generator 3 ------ 
+
+    Optimal solution = 4955
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4934
+    Performance = 4934 / 4955 = 0.9957618567103935
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3726
+    Performance = 3726 / 4955 = 0.7519677093844601
+------ x ------
+ ------ Computing solutions for instance 4 of generator 3 ------ 
+
+    Optimal solution = 4400
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4292
+    Performance = 4292 / 4400 = 0.9754545454545455
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3310
+    Performance = 3310 / 4400 = 0.7522727272727273
+------ x ------
+ ------ Computing solutions for instance 0 of generator 4 ------ 
+
+    Optimal solution = 75177
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3984
+    Performance = 3984 / 75177 = 0.05299493196057305
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 56394
+    Performance = 56394 / 75177 = 0.750149646833473
+------ x ------
+ ------ Computing solutions for instance 1 of generator 4 ------ 
+
+    Optimal solution = 75406
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3990
+    Performance = 3990 / 75406 = 0.05291356125507254
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 56565
+    Performance = 56565 / 75406 = 0.7501392462138291
+------ x ------
+ ------ Computing solutions for instance 2 of generator 4 ------ 
+
+    Optimal solution = 55964
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3994
+    Performance = 3994 / 55964 = 0.0713673075548567
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 41980
+    Performance = 41980 / 55964 = 0.7501250804088343
+------ x ------
+ ------ Computing solutions for instance 3 of generator 4 ------ 
+
+    Optimal solution = 71496
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3998
+    Performance = 3998 / 71496 = 0.05591921226362314
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 53632
+    Performance = 53632 / 71496 = 0.7501398679646414
+------ x ------
+ ------ Computing solutions for instance 4 of generator 4 ------ 
+
+    Optimal solution = 58350
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3999
+    Performance = 3999 / 58350 = 0.06853470437017994
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 43770
+    Performance = 43770 / 58350 = 0.7501285347043701
+------ x ------
+ ------ Computing solutions for instance 0 of generator 1 ------ 
+
+    Optimal solution = 764
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 462
+    Performance = 462 / 764 = 0.6047120418848168
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 574
+    Performance = 574 / 764 = 0.7513089005235603
+------ x ------
+ ------ Computing solutions for instance 1 of generator 1 ------ 
+
+    Optimal solution = 699
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 374
+    Performance = 374 / 699 = 0.5350500715307582
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 525
+    Performance = 525 / 699 = 0.7510729613733905
+------ x ------
+ ------ Computing solutions for instance 2 of generator 1 ------ 
+
+    Optimal solution = 414
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 189
+    Performance = 189 / 414 = 0.45652173913043476
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 311
+    Performance = 311 / 414 = 0.751207729468599
+------ x ------
+ ------ Computing solutions for instance 3 of generator 1 ------ 
+
+    Optimal solution = 851
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 480
+    Performance = 480 / 851 = 0.564042303172738
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 639
+    Performance = 639 / 851 = 0.7508813160987075
+------ x ------
+ ------ Computing solutions for instance 4 of generator 1 ------ 
+
+    Optimal solution = 744
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 430
+    Performance = 430 / 744 = 0.5779569892473119
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 559
+    Performance = 559 / 744 = 0.7513440860215054
+------ x ------
+ ------ Computing solutions for instance 0 of generator 2 ------ 
+
+    Optimal solution = 674
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 658
+    Performance = 658 / 674 = 0.9762611275964391
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 510
+    Performance = 510 / 674 = 0.7566765578635015
+------ x ------
+ ------ Computing solutions for instance 1 of generator 2 ------ 
+
+    Optimal solution = 528
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 528
+    Performance = 528 / 528 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 397
+    Performance = 397 / 528 = 0.7518939393939394
+------ x ------
+ ------ Computing solutions for instance 2 of generator 2 ------ 
+
+    Optimal solution = 352
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 333
+    Performance = 333 / 352 = 0.9460227272727273
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 265
+    Performance = 265 / 352 = 0.7528409090909091
+------ x ------
+ ------ Computing solutions for instance 3 of generator 2 ------ 
+
+    Optimal solution = 792
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 792
+    Performance = 792 / 792 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 597
+    Performance = 597 / 792 = 0.7537878787878788
+------ x ------
+ ------ Computing solutions for instance 4 of generator 2 ------ 
+
+    Optimal solution = 448
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 442
+    Performance = 442 / 448 = 0.9866071428571429
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 339
+    Performance = 339 / 448 = 0.7566964285714286
+------ x ------
+ ------ Computing solutions for instance 0 of generator 3 ------ 
+
+    Optimal solution = 3250
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 299
+    Performance = 299 / 3250 = 0.092
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 2444
+    Performance = 2444 / 3250 = 0.752
+------ x ------
+ ------ Computing solutions for instance 1 of generator 3 ------ 
+
+    Optimal solution = 4679
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4679
+    Performance = 4679 / 4679 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3519
+    Performance = 3519 / 4679 = 0.7520837785851677
+------ x ------
+ ------ Computing solutions for instance 2 of generator 3 ------ 
+
+    Optimal solution = 4071
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 298
+    Performance = 298 / 4071 = 0.07320068779169737
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3061
+    Performance = 3061 / 4071 = 0.7519037091623679
+------ x ------
+ ------ Computing solutions for instance 3 of generator 3 ------ 
+
+    Optimal solution = 4955
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4934
+    Performance = 4934 / 4955 = 0.9957618567103935
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3726
+    Performance = 3726 / 4955 = 0.7519677093844601
+------ x ------
+ ------ Computing solutions for instance 4 of generator 3 ------ 
+
+    Optimal solution = 4400
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4292
+    Performance = 4292 / 4400 = 0.9754545454545455
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3310
+    Performance = 3310 / 4400 = 0.7522727272727273
+------ x ------
+ ------ Computing solutions for instance 0 of generator 4 ------ 
+
+    Optimal solution = 75177
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3984
+    Performance = 3984 / 75177 = 0.05299493196057305
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 56394
+    Performance = 56394 / 75177 = 0.750149646833473
+------ x ------
+ ------ Computing solutions for instance 1 of generator 4 ------ 
+
+    Optimal solution = 75406
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3990
+    Performance = 3990 / 75406 = 0.05291356125507254
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 56565
+    Performance = 56565 / 75406 = 0.7501392462138291
+------ x ------
+ ------ Computing solutions for instance 2 of generator 4 ------ 
+
+    Optimal solution = 55964
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3994
+    Performance = 3994 / 55964 = 0.0713673075548567
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 41980
+    Performance = 41980 / 55964 = 0.7501250804088343
+------ x ------
+ ------ Computing solutions for instance 3 of generator 4 ------ 
+
+    Optimal solution = 71496
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3998
+    Performance = 3998 / 71496 = 0.05591921226362314
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 53632
+    Performance = 53632 / 71496 = 0.7501398679646414
+------ x ------
+ ------ Computing solutions for instance 4 of generator 4 ------ 
+
+    Optimal solution = 58350
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3999
+    Performance = 3999 / 58350 = 0.06853470437017994
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 43770
+    Performance = 43770 / 58350 = 0.7501285347043701
+------ x ------
+ ------ Computing solutions for instance 0 of generator 1 ------ 
+
+    Optimal solution = 764
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 462
+    Performance = 462 / 764 = 0.6047120418848168
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 574
+    Performance = 574 / 764 = 0.7513089005235603
+------ x ------
+ ------ Computing solutions for instance 1 of generator 1 ------ 
+
+    Optimal solution = 699
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 374
+    Performance = 374 / 699 = 0.5350500715307582
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 525
+    Performance = 525 / 699 = 0.7510729613733905
+------ x ------
+ ------ Computing solutions for instance 2 of generator 1 ------ 
+
+    Optimal solution = 414
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 189
+    Performance = 189 / 414 = 0.45652173913043476
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 311
+    Performance = 311 / 414 = 0.751207729468599
+------ x ------
+ ------ Computing solutions for instance 3 of generator 1 ------ 
+
+    Optimal solution = 851
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 480
+    Performance = 480 / 851 = 0.564042303172738
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 639
+    Performance = 639 / 851 = 0.7508813160987075
+------ x ------
+ ------ Computing solutions for instance 4 of generator 1 ------ 
+
+    Optimal solution = 744
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 430
+    Performance = 430 / 744 = 0.5779569892473119
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 559
+    Performance = 559 / 744 = 0.7513440860215054
+------ x ------
+ ------ Computing solutions for instance 0 of generator 2 ------ 
+
+    Optimal solution = 674
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 658
+    Performance = 658 / 674 = 0.9762611275964391
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 510
+    Performance = 510 / 674 = 0.7566765578635015
+------ x ------
+ ------ Computing solutions for instance 1 of generator 2 ------ 
+
+    Optimal solution = 528
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 528
+    Performance = 528 / 528 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 397
+    Performance = 397 / 528 = 0.7518939393939394
+------ x ------
+ ------ Computing solutions for instance 2 of generator 2 ------ 
+
+    Optimal solution = 352
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 333
+    Performance = 333 / 352 = 0.9460227272727273
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 265
+    Performance = 265 / 352 = 0.7528409090909091
+------ x ------
+ ------ Computing solutions for instance 3 of generator 2 ------ 
+
+    Optimal solution = 792
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 792
+    Performance = 792 / 792 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 597
+    Performance = 597 / 792 = 0.7537878787878788
+------ x ------
+ ------ Computing solutions for instance 4 of generator 2 ------ 
+
+    Optimal solution = 448
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 442
+    Performance = 442 / 448 = 0.9866071428571429
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 339
+    Performance = 339 / 448 = 0.7566964285714286
+------ x ------
+ ------ Computing solutions for instance 0 of generator 3 ------ 
+
+    Optimal solution = 3250
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 299
+    Performance = 299 / 3250 = 0.092
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 2444
+    Performance = 2444 / 3250 = 0.752
+------ x ------
+ ------ Computing solutions for instance 1 of generator 3 ------ 
+
+    Optimal solution = 4679
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4679
+    Performance = 4679 / 4679 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3519
+    Performance = 3519 / 4679 = 0.7520837785851677
+------ x ------
+ ------ Computing solutions for instance 2 of generator 3 ------ 
+
+    Optimal solution = 4071
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 298
+    Performance = 298 / 4071 = 0.07320068779169737
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3061
+    Performance = 3061 / 4071 = 0.7519037091623679
+------ x ------
+ ------ Computing solutions for instance 3 of generator 3 ------ 
+
+    Optimal solution = 4955
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4934
+    Performance = 4934 / 4955 = 0.9957618567103935
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3726
+    Performance = 3726 / 4955 = 0.7519677093844601
+------ x ------
+ ------ Computing solutions for instance 4 of generator 3 ------ 
+
+    Optimal solution = 4400
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4292
+    Performance = 4292 / 4400 = 0.9754545454545455
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3310
+    Performance = 3310 / 4400 = 0.7522727272727273
+------ x ------
+ ------ Computing solutions for instance 0 of generator 4 ------ 
+
+    Optimal solution = 75177
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3984
+    Performance = 3984 / 75177 = 0.05299493196057305
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 56394
+    Performance = 56394 / 75177 = 0.750149646833473
+------ x ------
+ ------ Computing solutions for instance 1 of generator 4 ------ 
+
+    Optimal solution = 75406
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3990
+    Performance = 3990 / 75406 = 0.05291356125507254
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 56565
+    Performance = 56565 / 75406 = 0.7501392462138291
+------ x ------
+ ------ Computing solutions for instance 2 of generator 4 ------ 
+
+    Optimal solution = 55964
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3994
+    Performance = 3994 / 55964 = 0.0713673075548567
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 41980
+    Performance = 41980 / 55964 = 0.7501250804088343
+------ x ------
+ ------ Computing solutions for instance 3 of generator 4 ------ 
+
+    Optimal solution = 71496
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3998
+    Performance = 3998 / 71496 = 0.05591921226362314
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 53632
+    Performance = 53632 / 71496 = 0.7501398679646414
+------ x ------
+ ------ Computing solutions for instance 4 of generator 4 ------ 
+
+    Optimal solution = 58350
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3999
+    Performance = 3999 / 58350 = 0.06853470437017994
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 43770
+    Performance = 43770 / 58350 = 0.7501285347043701
+------ x ------
+ ------ Computing solutions for instance 0 of generator 1 ------ 
+
+    Optimal solution = 764
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 462
+    Performance = 462 / 764 = 0.6047120418848168
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 574
+    Performance = 574 / 764 = 0.7513089005235603
+------ x ------
+ ------ Computing solutions for instance 1 of generator 1 ------ 
+
+    Optimal solution = 699
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 374
+    Performance = 374 / 699 = 0.5350500715307582
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 525
+    Performance = 525 / 699 = 0.7510729613733905
+------ x ------
+ ------ Computing solutions for instance 2 of generator 1 ------ 
+
+    Optimal solution = 414
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 189
+    Performance = 189 / 414 = 0.45652173913043476
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 311
+    Performance = 311 / 414 = 0.751207729468599
+------ x ------
+ ------ Computing solutions for instance 3 of generator 1 ------ 
+
+    Optimal solution = 851
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 480
+    Performance = 480 / 851 = 0.564042303172738
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 639
+    Performance = 639 / 851 = 0.7508813160987075
+------ x ------
+ ------ Computing solutions for instance 4 of generator 1 ------ 
+
+    Optimal solution = 744
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 430
+    Performance = 430 / 744 = 0.5779569892473119
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 559
+    Performance = 559 / 744 = 0.7513440860215054
+------ x ------
+ ------ Computing solutions for instance 0 of generator 2 ------ 
+
+    Optimal solution = 674
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 658
+    Performance = 658 / 674 = 0.9762611275964391
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 510
+    Performance = 510 / 674 = 0.7566765578635015
+------ x ------
+ ------ Computing solutions for instance 1 of generator 2 ------ 
+
+    Optimal solution = 528
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 528
+    Performance = 528 / 528 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 397
+    Performance = 397 / 528 = 0.7518939393939394
+------ x ------
+ ------ Computing solutions for instance 2 of generator 2 ------ 
+
+    Optimal solution = 352
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 333
+    Performance = 333 / 352 = 0.9460227272727273
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 265
+    Performance = 265 / 352 = 0.7528409090909091
+------ x ------
+ ------ Computing solutions for instance 3 of generator 2 ------ 
+
+    Optimal solution = 792
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 792
+    Performance = 792 / 792 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 597
+    Performance = 597 / 792 = 0.7537878787878788
+------ x ------
+ ------ Computing solutions for instance 4 of generator 2 ------ 
+
+    Optimal solution = 448
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 442
+    Performance = 442 / 448 = 0.9866071428571429
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 339
+    Performance = 339 / 448 = 0.7566964285714286
+------ x ------
+ ------ Computing solutions for instance 0 of generator 3 ------ 
+
+    Optimal solution = 3250
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 299
+    Performance = 299 / 3250 = 0.092
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 2444
+    Performance = 2444 / 3250 = 0.752
+------ x ------
+ ------ Computing solutions for instance 1 of generator 3 ------ 
+
+    Optimal solution = 4679
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4679
+    Performance = 4679 / 4679 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3519
+    Performance = 3519 / 4679 = 0.7520837785851677
+------ x ------
+ ------ Computing solutions for instance 2 of generator 3 ------ 
+
+    Optimal solution = 4071
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 298
+    Performance = 298 / 4071 = 0.07320068779169737
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3061
+    Performance = 3061 / 4071 = 0.7519037091623679
+------ x ------
+ ------ Computing solutions for instance 3 of generator 3 ------ 
+
+    Optimal solution = 4955
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4934
+    Performance = 4934 / 4955 = 0.9957618567103935
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3726
+    Performance = 3726 / 4955 = 0.7519677093844601
+------ x ------
+ ------ Computing solutions for instance 4 of generator 3 ------ 
+
+    Optimal solution = 4400
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4292
+    Performance = 4292 / 4400 = 0.9754545454545455
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3310
+    Performance = 3310 / 4400 = 0.7522727272727273
+------ x ------
+ ------ Computing solutions for instance 0 of generator 4 ------ 
+
+    Optimal solution = 75177
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3984
+    Performance = 3984 / 75177 = 0.05299493196057305
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 56394
+    Performance = 56394 / 75177 = 0.750149646833473
+------ x ------
+ ------ Computing solutions for instance 1 of generator 4 ------ 
+
+    Optimal solution = 75406
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3990
+    Performance = 3990 / 75406 = 0.05291356125507254
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 56565
+    Performance = 56565 / 75406 = 0.7501392462138291
+------ x ------
+ ------ Computing solutions for instance 2 of generator 4 ------ 
+
+    Optimal solution = 55964
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3994
+    Performance = 3994 / 55964 = 0.0713673075548567
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 41980
+    Performance = 41980 / 55964 = 0.7501250804088343
+------ x ------
+ ------ Computing solutions for instance 3 of generator 4 ------ 
+
+    Optimal solution = 71496
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3998
+    Performance = 3998 / 71496 = 0.05591921226362314
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 53632
+    Performance = 53632 / 71496 = 0.7501398679646414
+------ x ------
+ ------ Computing solutions for instance 4 of generator 4 ------ 
+
+    Optimal solution = 58350
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3999
+    Performance = 3999 / 58350 = 0.06853470437017994
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 43770
+    Performance = 43770 / 58350 = 0.7501285347043701
+------ x ------
+ ------ Computing solutions for instance 0 of generator 1 ------ 
+
+    Optimal solution = 764
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 462
+    Performance = 462 / 764 = 0.6047120418848168
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 574
+    Performance = 574 / 764 = 0.7513089005235603
+------ x ------
+ ------ Computing solutions for instance 1 of generator 1 ------ 
+
+    Optimal solution = 699
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 374
+    Performance = 374 / 699 = 0.5350500715307582
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 525
+    Performance = 525 / 699 = 0.7510729613733905
+------ x ------
+ ------ Computing solutions for instance 2 of generator 1 ------ 
+
+    Optimal solution = 414
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 189
+    Performance = 189 / 414 = 0.45652173913043476
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 311
+    Performance = 311 / 414 = 0.751207729468599
+------ x ------
+ ------ Computing solutions for instance 3 of generator 1 ------ 
+
+    Optimal solution = 851
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 480
+    Performance = 480 / 851 = 0.564042303172738
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 639
+    Performance = 639 / 851 = 0.7508813160987075
+------ x ------
+ ------ Computing solutions for instance 4 of generator 1 ------ 
+
+    Optimal solution = 744
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 430
+    Performance = 430 / 744 = 0.5779569892473119
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 559
+    Performance = 559 / 744 = 0.7513440860215054
+------ x ------
+ ------ Computing solutions for instance 0 of generator 2 ------ 
+
+    Optimal solution = 674
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 658
+    Performance = 658 / 674 = 0.9762611275964391
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 510
+    Performance = 510 / 674 = 0.7566765578635015
+------ x ------
+ ------ Computing solutions for instance 1 of generator 2 ------ 
+
+    Optimal solution = 528
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 528
+    Performance = 528 / 528 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 397
+    Performance = 397 / 528 = 0.7518939393939394
+------ x ------
+ ------ Computing solutions for instance 2 of generator 2 ------ 
+
+    Optimal solution = 352
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 333
+    Performance = 333 / 352 = 0.9460227272727273
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 265
+    Performance = 265 / 352 = 0.7528409090909091
+------ x ------
+ ------ Computing solutions for instance 3 of generator 2 ------ 
+
+    Optimal solution = 792
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 792
+    Performance = 792 / 792 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 597
+    Performance = 597 / 792 = 0.7537878787878788
+------ x ------
+ ------ Computing solutions for instance 4 of generator 2 ------ 
+
+    Optimal solution = 448
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 442
+    Performance = 442 / 448 = 0.9866071428571429
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 339
+    Performance = 339 / 448 = 0.7566964285714286
+------ x ------
+ ------ Computing solutions for instance 0 of generator 3 ------ 
+
+    Optimal solution = 3250
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 299
+    Performance = 299 / 3250 = 0.092
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 2444
+    Performance = 2444 / 3250 = 0.752
+------ x ------
+ ------ Computing solutions for instance 1 of generator 3 ------ 
+
+    Optimal solution = 4679
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4679
+    Performance = 4679 / 4679 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3519
+    Performance = 3519 / 4679 = 0.7520837785851677
+------ x ------
+ ------ Computing solutions for instance 2 of generator 3 ------ 
+
+    Optimal solution = 4071
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 298
+    Performance = 298 / 4071 = 0.07320068779169737
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3061
+    Performance = 3061 / 4071 = 0.7519037091623679
+------ x ------
+ ------ Computing solutions for instance 3 of generator 3 ------ 
+
+    Optimal solution = 4955
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4934
+    Performance = 4934 / 4955 = 0.9957618567103935
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3726
+    Performance = 3726 / 4955 = 0.7519677093844601
+------ x ------
+ ------ Computing solutions for instance 4 of generator 3 ------ 
+
+    Optimal solution = 4400
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4292
+    Performance = 4292 / 4400 = 0.9754545454545455
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3310
+    Performance = 3310 / 4400 = 0.7522727272727273
+------ x ------
+ ------ Computing solutions for instance 0 of generator 4 ------ 
+
+    Optimal solution = 75177
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3984
+    Performance = 3984 / 75177 = 0.05299493196057305
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 56394
+    Performance = 56394 / 75177 = 0.750149646833473
+------ x ------
+ ------ Computing solutions for instance 1 of generator 4 ------ 
+
+    Optimal solution = 75406
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3990
+    Performance = 3990 / 75406 = 0.05291356125507254
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 56565
+    Performance = 56565 / 75406 = 0.7501392462138291
+------ x ------
+ ------ Computing solutions for instance 2 of generator 4 ------ 
+
+    Optimal solution = 55964
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3994
+    Performance = 3994 / 55964 = 0.0713673075548567
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 41980
+    Performance = 41980 / 55964 = 0.7501250804088343
+------ x ------
+ ------ Computing solutions for instance 3 of generator 4 ------ 
+
+    Optimal solution = 71496
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3998
+    Performance = 3998 / 71496 = 0.05591921226362314
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 53632
+    Performance = 53632 / 71496 = 0.7501398679646414
+------ x ------
+ ------ Computing solutions for instance 4 of generator 4 ------ 
+
+    Optimal solution = 58350
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3999
+    Performance = 3999 / 58350 = 0.06853470437017994
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 43770
+    Performance = 43770 / 58350 = 0.7501285347043701
+------ x ------
+ ------ Computing solutions for instance 0 of generator 1 ------ 
+
+    Optimal solution = 764
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 462
+    Performance = 462 / 764 = 0.6047120418848168
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 574
+    Performance = 574 / 764 = 0.7513089005235603
+------ x ------
+ ------ Computing solutions for instance 1 of generator 1 ------ 
+
+    Optimal solution = 699
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 374
+    Performance = 374 / 699 = 0.5350500715307582
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 525
+    Performance = 525 / 699 = 0.7510729613733905
+------ x ------
+ ------ Computing solutions for instance 2 of generator 1 ------ 
+
+    Optimal solution = 414
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 189
+    Performance = 189 / 414 = 0.45652173913043476
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 311
+    Performance = 311 / 414 = 0.751207729468599
+------ x ------
+ ------ Computing solutions for instance 3 of generator 1 ------ 
+
+    Optimal solution = 851
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 480
+    Performance = 480 / 851 = 0.564042303172738
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 639
+    Performance = 639 / 851 = 0.7508813160987075
+------ x ------
+ ------ Computing solutions for instance 4 of generator 1 ------ 
+
+    Optimal solution = 744
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 430
+    Performance = 430 / 744 = 0.5779569892473119
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 559
+    Performance = 559 / 744 = 0.7513440860215054
+------ x ------
+ ------ Computing solutions for instance 0 of generator 2 ------ 
+
+    Optimal solution = 674
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 658
+    Performance = 658 / 674 = 0.9762611275964391
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 510
+    Performance = 510 / 674 = 0.7566765578635015
+------ x ------
+ ------ Computing solutions for instance 1 of generator 2 ------ 
+
+    Optimal solution = 528
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 528
+    Performance = 528 / 528 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 397
+    Performance = 397 / 528 = 0.7518939393939394
+------ x ------
+ ------ Computing solutions for instance 2 of generator 2 ------ 
+
+    Optimal solution = 352
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 333
+    Performance = 333 / 352 = 0.9460227272727273
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 265
+    Performance = 265 / 352 = 0.7528409090909091
+------ x ------
+ ------ Computing solutions for instance 3 of generator 2 ------ 
+
+    Optimal solution = 792
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 792
+    Performance = 792 / 792 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 597
+    Performance = 597 / 792 = 0.7537878787878788
+------ x ------
+ ------ Computing solutions for instance 4 of generator 2 ------ 
+
+    Optimal solution = 448
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 442
+    Performance = 442 / 448 = 0.9866071428571429
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 339
+    Performance = 339 / 448 = 0.7566964285714286
+------ x ------
+ ------ Computing solutions for instance 0 of generator 3 ------ 
+
+    Optimal solution = 3250
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 299
+    Performance = 299 / 3250 = 0.092
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 2444
+    Performance = 2444 / 3250 = 0.752
+------ x ------
+ ------ Computing solutions for instance 1 of generator 3 ------ 
+
+    Optimal solution = 4679
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4679
+    Performance = 4679 / 4679 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3519
+    Performance = 3519 / 4679 = 0.7520837785851677
+------ x ------
+ ------ Computing solutions for instance 2 of generator 3 ------ 
+
+    Optimal solution = 4071
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 298
+    Performance = 298 / 4071 = 0.07320068779169737
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3061
+    Performance = 3061 / 4071 = 0.7519037091623679
+------ x ------
+ ------ Computing solutions for instance 3 of generator 3 ------ 
+
+    Optimal solution = 4955
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4934
+    Performance = 4934 / 4955 = 0.9957618567103935
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3726
+    Performance = 3726 / 4955 = 0.7519677093844601
+------ x ------
+ ------ Computing solutions for instance 4 of generator 3 ------ 
+
+    Optimal solution = 4400
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4292
+    Performance = 4292 / 4400 = 0.9754545454545455
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3310
+    Performance = 3310 / 4400 = 0.7522727272727273
+------ x ------
+ ------ Computing solutions for instance 0 of generator 4 ------ 
+
+    Optimal solution = 75177
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3984
+    Performance = 3984 / 75177 = 0.05299493196057305
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 56394
+    Performance = 56394 / 75177 = 0.750149646833473
+------ x ------
+ ------ Computing solutions for instance 1 of generator 4 ------ 
+
+    Optimal solution = 75406
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3990
+    Performance = 3990 / 75406 = 0.05291356125507254
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 56565
+    Performance = 56565 / 75406 = 0.7501392462138291
+------ x ------
+ ------ Computing solutions for instance 2 of generator 4 ------ 
+
+    Optimal solution = 55964
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3994
+    Performance = 3994 / 55964 = 0.0713673075548567
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 41980
+    Performance = 41980 / 55964 = 0.7501250804088343
+------ x ------
+ ------ Computing solutions for instance 3 of generator 4 ------ 
+
+    Optimal solution = 71496
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3998
+    Performance = 3998 / 71496 = 0.05591921226362314
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 53632
+    Performance = 53632 / 71496 = 0.7501398679646414
+------ x ------
+ ------ Computing solutions for instance 4 of generator 4 ------ 
+
+    Optimal solution = 58350
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3999
+    Performance = 3999 / 58350 = 0.06853470437017994
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 43770
+    Performance = 43770 / 58350 = 0.7501285347043701
+------ x ------
+ ------ Computing solutions for instance 0 of generator 1 ------ 
+
+    Optimal solution = 764
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 462
+    Performance = 462 / 764 = 0.6047120418848168
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 574
+    Performance = 574 / 764 = 0.7513089005235603
+------ x ------
+ ------ Computing solutions for instance 1 of generator 1 ------ 
+
+    Optimal solution = 699
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 374
+    Performance = 374 / 699 = 0.5350500715307582
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 525
+    Performance = 525 / 699 = 0.7510729613733905
+------ x ------
+ ------ Computing solutions for instance 2 of generator 1 ------ 
+
+    Optimal solution = 414
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 189
+    Performance = 189 / 414 = 0.45652173913043476
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 311
+    Performance = 311 / 414 = 0.751207729468599
+------ x ------
+ ------ Computing solutions for instance 3 of generator 1 ------ 
+
+    Optimal solution = 851
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 480
+    Performance = 480 / 851 = 0.564042303172738
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 639
+    Performance = 639 / 851 = 0.7508813160987075
+------ x ------
+ ------ Computing solutions for instance 4 of generator 1 ------ 
+
+    Optimal solution = 744
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 430
+    Performance = 430 / 744 = 0.5779569892473119
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 559
+    Performance = 559 / 744 = 0.7513440860215054
+------ x ------
+ ------ Computing solutions for instance 0 of generator 2 ------ 
+
+    Optimal solution = 674
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 658
+    Performance = 658 / 674 = 0.9762611275964391
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 510
+    Performance = 510 / 674 = 0.7566765578635015
+------ x ------
+ ------ Computing solutions for instance 1 of generator 2 ------ 
+
+    Optimal solution = 528
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 528
+    Performance = 528 / 528 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 397
+    Performance = 397 / 528 = 0.7518939393939394
+------ x ------
+ ------ Computing solutions for instance 2 of generator 2 ------ 
+
+    Optimal solution = 352
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 333
+    Performance = 333 / 352 = 0.9460227272727273
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 265
+    Performance = 265 / 352 = 0.7528409090909091
+------ x ------
+ ------ Computing solutions for instance 3 of generator 2 ------ 
+
+    Optimal solution = 792
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 792
+    Performance = 792 / 792 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 597
+    Performance = 597 / 792 = 0.7537878787878788
+------ x ------
+ ------ Computing solutions for instance 4 of generator 2 ------ 
+
+    Optimal solution = 448
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 442
+    Performance = 442 / 448 = 0.9866071428571429
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 339
+    Performance = 339 / 448 = 0.7566964285714286
+------ x ------
+ ------ Computing solutions for instance 0 of generator 3 ------ 
+
+    Optimal solution = 3250
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 299
+    Performance = 299 / 3250 = 0.092
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 2444
+    Performance = 2444 / 3250 = 0.752
+------ x ------
+ ------ Computing solutions for instance 1 of generator 3 ------ 
+
+    Optimal solution = 4679
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4679
+    Performance = 4679 / 4679 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3519
+    Performance = 3519 / 4679 = 0.7520837785851677
+------ x ------
+ ------ Computing solutions for instance 2 of generator 3 ------ 
+
+    Optimal solution = 4071
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 298
+    Performance = 298 / 4071 = 0.07320068779169737
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3061
+    Performance = 3061 / 4071 = 0.7519037091623679
+------ x ------
+ ------ Computing solutions for instance 3 of generator 3 ------ 
+
+    Optimal solution = 4955
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4934
+    Performance = 4934 / 4955 = 0.9957618567103935
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3726
+    Performance = 3726 / 4955 = 0.7519677093844601
+------ x ------
+ ------ Computing solutions for instance 4 of generator 3 ------ 
+
+    Optimal solution = 4400
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4292
+    Performance = 4292 / 4400 = 0.9754545454545455
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3310
+    Performance = 3310 / 4400 = 0.7522727272727273
+------ x ------
+ ------ Computing solutions for instance 0 of generator 4 ------ 
+
+    Optimal solution = 75177
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3984
+    Performance = 3984 / 75177 = 0.05299493196057305
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 56394
+    Performance = 56394 / 75177 = 0.750149646833473
+------ x ------
+ ------ Computing solutions for instance 1 of generator 4 ------ 
+
+    Optimal solution = 75406
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3990
+    Performance = 3990 / 75406 = 0.05291356125507254
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 56565
+    Performance = 56565 / 75406 = 0.7501392462138291
+------ x ------
+ ------ Computing solutions for instance 2 of generator 4 ------ 
+
+    Optimal solution = 55964
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3994
+    Performance = 3994 / 55964 = 0.0713673075548567
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 41980
+    Performance = 41980 / 55964 = 0.7501250804088343
+------ x ------
+ ------ Computing solutions for instance 3 of generator 4 ------ 
+
+    Optimal solution = 71496
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3998
+    Performance = 3998 / 71496 = 0.05591921226362314
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 53632
+    Performance = 53632 / 71496 = 0.7501398679646414
+------ x ------
+ ------ Computing solutions for instance 4 of generator 4 ------ 
+
+    Optimal solution = 58350
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3999
+    Performance = 3999 / 58350 = 0.06853470437017994
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 43770
+    Performance = 43770 / 58350 = 0.7501285347043701
+------ x ------
+ ------ Computing solutions for instance 0 of generator 1 ------ 
+
+    Optimal solution = 764
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 462
+    Performance = 462 / 764 = 0.6047120418848168
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 574
+    Performance = 574 / 764 = 0.7513089005235603
+------ x ------
+ ------ Computing solutions for instance 1 of generator 1 ------ 
+
+    Optimal solution = 699
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 374
+    Performance = 374 / 699 = 0.5350500715307582
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 525
+    Performance = 525 / 699 = 0.7510729613733905
+------ x ------
+ ------ Computing solutions for instance 2 of generator 1 ------ 
+
+    Optimal solution = 414
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 189
+    Performance = 189 / 414 = 0.45652173913043476
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 311
+    Performance = 311 / 414 = 0.751207729468599
+------ x ------
+ ------ Computing solutions for instance 3 of generator 1 ------ 
+
+    Optimal solution = 851
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 480
+    Performance = 480 / 851 = 0.564042303172738
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 639
+    Performance = 639 / 851 = 0.7508813160987075
+------ x ------
+ ------ Computing solutions for instance 4 of generator 1 ------ 
+
+    Optimal solution = 744
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 430
+    Performance = 430 / 744 = 0.5779569892473119
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 559
+    Performance = 559 / 744 = 0.7513440860215054
+------ x ------
+ ------ Computing solutions for instance 0 of generator 2 ------ 
+
+    Optimal solution = 674
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 658
+    Performance = 658 / 674 = 0.9762611275964391
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 510
+    Performance = 510 / 674 = 0.7566765578635015
+------ x ------
+ ------ Computing solutions for instance 1 of generator 2 ------ 
+
+    Optimal solution = 528
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 528
+    Performance = 528 / 528 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 397
+    Performance = 397 / 528 = 0.7518939393939394
+------ x ------
+ ------ Computing solutions for instance 2 of generator 2 ------ 
+
+    Optimal solution = 352
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 333
+    Performance = 333 / 352 = 0.9460227272727273
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 265
+    Performance = 265 / 352 = 0.7528409090909091
+------ x ------
+ ------ Computing solutions for instance 3 of generator 2 ------ 
+
+    Optimal solution = 792
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 792
+    Performance = 792 / 792 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 597
+    Performance = 597 / 792 = 0.7537878787878788
+------ x ------
+ ------ Computing solutions for instance 4 of generator 2 ------ 
+
+    Optimal solution = 448
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 442
+    Performance = 442 / 448 = 0.9866071428571429
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 339
+    Performance = 339 / 448 = 0.7566964285714286
+------ x ------
+ ------ Computing solutions for instance 0 of generator 3 ------ 
+
+    Optimal solution = 3250
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 299
+    Performance = 299 / 3250 = 0.092
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 2444
+    Performance = 2444 / 3250 = 0.752
+------ x ------
+ ------ Computing solutions for instance 1 of generator 3 ------ 
+
+    Optimal solution = 4679
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4679
+    Performance = 4679 / 4679 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3519
+    Performance = 3519 / 4679 = 0.7520837785851677
+------ x ------
+ ------ Computing solutions for instance 2 of generator 3 ------ 
+
+    Optimal solution = 4071
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 298
+    Performance = 298 / 4071 = 0.07320068779169737
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3061
+    Performance = 3061 / 4071 = 0.7519037091623679
+------ x ------
+ ------ Computing solutions for instance 3 of generator 3 ------ 
+
+    Optimal solution = 4955
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4934
+    Performance = 4934 / 4955 = 0.9957618567103935
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3726
+    Performance = 3726 / 4955 = 0.7519677093844601
+------ x ------
+ ------ Computing solutions for instance 4 of generator 3 ------ 
+
+    Optimal solution = 4400
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4292
+    Performance = 4292 / 4400 = 0.9754545454545455
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3310
+    Performance = 3310 / 4400 = 0.7522727272727273
+------ x ------
+ ------ Computing solutions for instance 0 of generator 4 ------ 
+
+    Optimal solution = 75177
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3984
+    Performance = 3984 / 75177 = 0.05299493196057305
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 56394
+    Performance = 56394 / 75177 = 0.750149646833473
+------ x ------
+ ------ Computing solutions for instance 1 of generator 4 ------ 
+
+    Optimal solution = 75406
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3990
+    Performance = 3990 / 75406 = 0.05291356125507254
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 56565
+    Performance = 56565 / 75406 = 0.7501392462138291
+------ x ------
+ ------ Computing solutions for instance 2 of generator 4 ------ 
+
+    Optimal solution = 55964
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3994
+    Performance = 3994 / 55964 = 0.0713673075548567
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 41980
+    Performance = 41980 / 55964 = 0.7501250804088343
+------ x ------
+ ------ Computing solutions for instance 3 of generator 4 ------ 
+
+    Optimal solution = 71496
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3998
+    Performance = 3998 / 71496 = 0.05591921226362314
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 53632
+    Performance = 53632 / 71496 = 0.7501398679646414
+------ x ------
+ ------ Computing solutions for instance 4 of generator 4 ------ 
+
+    Optimal solution = 58350
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3999
+    Performance = 3999 / 58350 = 0.06853470437017994
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 43770
+    Performance = 43770 / 58350 = 0.7501285347043701
+------ x ------
+ ------ Computing solutions for instance 0 of generator 1 ------ 
+
+    Optimal solution = 764
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 462
+    Performance = 462 / 764 = 0.6047120418848168
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 574
+    Performance = 574 / 764 = 0.7513089005235603
+------ x ------
+ ------ Computing solutions for instance 1 of generator 1 ------ 
+
+    Optimal solution = 699
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 374
+    Performance = 374 / 699 = 0.5350500715307582
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 525
+    Performance = 525 / 699 = 0.7510729613733905
+------ x ------
+ ------ Computing solutions for instance 2 of generator 1 ------ 
+
+    Optimal solution = 414
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 189
+    Performance = 189 / 414 = 0.45652173913043476
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 311
+    Performance = 311 / 414 = 0.751207729468599
+------ x ------
+ ------ Computing solutions for instance 3 of generator 1 ------ 
+
+    Optimal solution = 851
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 480
+    Performance = 480 / 851 = 0.564042303172738
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 639
+    Performance = 639 / 851 = 0.7508813160987075
+------ x ------
+ ------ Computing solutions for instance 4 of generator 1 ------ 
+
+    Optimal solution = 744
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 430
+    Performance = 430 / 744 = 0.5779569892473119
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 559
+    Performance = 559 / 744 = 0.7513440860215054
+------ x ------
+ ------ Computing solutions for instance 0 of generator 2 ------ 
+
+    Optimal solution = 674
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 658
+    Performance = 658 / 674 = 0.9762611275964391
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 510
+    Performance = 510 / 674 = 0.7566765578635015
+------ x ------
+ ------ Computing solutions for instance 1 of generator 2 ------ 
+
+    Optimal solution = 528
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 528
+    Performance = 528 / 528 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 397
+    Performance = 397 / 528 = 0.7518939393939394
+------ x ------
+ ------ Computing solutions for instance 2 of generator 2 ------ 
+
+    Optimal solution = 352
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 333
+    Performance = 333 / 352 = 0.9460227272727273
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 265
+    Performance = 265 / 352 = 0.7528409090909091
+------ x ------
+ ------ Computing solutions for instance 3 of generator 2 ------ 
+
+    Optimal solution = 792
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 792
+    Performance = 792 / 792 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 597
+    Performance = 597 / 792 = 0.7537878787878788
+------ x ------
+ ------ Computing solutions for instance 4 of generator 2 ------ 
+
+    Optimal solution = 448
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 442
+    Performance = 442 / 448 = 0.9866071428571429
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 339
+    Performance = 339 / 448 = 0.7566964285714286
+------ x ------
+ ------ Computing solutions for instance 0 of generator 3 ------ 
+
+    Optimal solution = 3250
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 299
+    Performance = 299 / 3250 = 0.092
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 2444
+    Performance = 2444 / 3250 = 0.752
+------ x ------
+ ------ Computing solutions for instance 1 of generator 3 ------ 
+
+    Optimal solution = 4679
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4679
+    Performance = 4679 / 4679 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3519
+    Performance = 3519 / 4679 = 0.7520837785851677
+------ x ------
+ ------ Computing solutions for instance 2 of generator 3 ------ 
+
+    Optimal solution = 4071
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 298
+    Performance = 298 / 4071 = 0.07320068779169737
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3061
+    Performance = 3061 / 4071 = 0.7519037091623679
+------ x ------
+ ------ Computing solutions for instance 3 of generator 3 ------ 
+
+    Optimal solution = 4955
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4934
+    Performance = 4934 / 4955 = 0.9957618567103935
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3726
+    Performance = 3726 / 4955 = 0.7519677093844601
+------ x ------
+ ------ Computing solutions for instance 4 of generator 3 ------ 
+
+    Optimal solution = 4400
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4292
+    Performance = 4292 / 4400 = 0.9754545454545455
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3310
+    Performance = 3310 / 4400 = 0.7522727272727273
+------ x ------
+ ------ Computing solutions for instance 0 of generator 4 ------ 
+
+    Optimal solution = 75177
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3984
+    Performance = 3984 / 75177 = 0.05299493196057305
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 56394
+    Performance = 56394 / 75177 = 0.750149646833473
+------ x ------
+ ------ Computing solutions for instance 1 of generator 4 ------ 
+
+    Optimal solution = 75406
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3990
+    Performance = 3990 / 75406 = 0.05291356125507254
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 56565
+    Performance = 56565 / 75406 = 0.7501392462138291
+------ x ------
+ ------ Computing solutions for instance 2 of generator 4 ------ 
+
+    Optimal solution = 55964
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3994
+    Performance = 3994 / 55964 = 0.0713673075548567
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 41980
+    Performance = 41980 / 55964 = 0.7501250804088343
+------ x ------
+ ------ Computing solutions for instance 3 of generator 4 ------ 
+
+    Optimal solution = 71496
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3998
+    Performance = 3998 / 71496 = 0.05591921226362314
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 53632
+    Performance = 53632 / 71496 = 0.7501398679646414
+------ x ------
+ ------ Computing solutions for instance 4 of generator 4 ------ 
+
+    Optimal solution = 58350
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3999
+    Performance = 3999 / 58350 = 0.06853470437017994
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 43770
+    Performance = 43770 / 58350 = 0.7501285347043701
+------ x ------
+ ------ Computing solutions for instance 0 of generator 1 ------ 
+
+    Optimal solution = 764
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 462
+    Performance = 462 / 764 = 0.6047120418848168
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 574
+    Performance = 574 / 764 = 0.7513089005235603
+------ x ------
+ ------ Computing solutions for instance 1 of generator 1 ------ 
+
+    Optimal solution = 699
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 374
+    Performance = 374 / 699 = 0.5350500715307582
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 525
+    Performance = 525 / 699 = 0.7510729613733905
+------ x ------
+ ------ Computing solutions for instance 2 of generator 1 ------ 
+
+    Optimal solution = 414
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 189
+    Performance = 189 / 414 = 0.45652173913043476
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 311
+    Performance = 311 / 414 = 0.751207729468599
+------ x ------
+ ------ Computing solutions for instance 3 of generator 1 ------ 
+
+    Optimal solution = 851
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 480
+    Performance = 480 / 851 = 0.564042303172738
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 639
+    Performance = 639 / 851 = 0.7508813160987075
+------ x ------
+ ------ Computing solutions for instance 4 of generator 1 ------ 
+
+    Optimal solution = 744
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 430
+    Performance = 430 / 744 = 0.5779569892473119
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 559
+    Performance = 559 / 744 = 0.7513440860215054
+------ x ------
+ ------ Computing solutions for instance 0 of generator 2 ------ 
+
+    Optimal solution = 674
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 658
+    Performance = 658 / 674 = 0.9762611275964391
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 510
+    Performance = 510 / 674 = 0.7566765578635015
+------ x ------
+ ------ Computing solutions for instance 1 of generator 2 ------ 
+
+    Optimal solution = 528
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 528
+    Performance = 528 / 528 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 397
+    Performance = 397 / 528 = 0.7518939393939394
+------ x ------
+ ------ Computing solutions for instance 2 of generator 2 ------ 
+
+    Optimal solution = 352
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 333
+    Performance = 333 / 352 = 0.9460227272727273
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 265
+    Performance = 265 / 352 = 0.7528409090909091
+------ x ------
+ ------ Computing solutions for instance 3 of generator 2 ------ 
+
+    Optimal solution = 792
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 792
+    Performance = 792 / 792 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 597
+    Performance = 597 / 792 = 0.7537878787878788
+------ x ------
+ ------ Computing solutions for instance 4 of generator 2 ------ 
+
+    Optimal solution = 448
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 442
+    Performance = 442 / 448 = 0.9866071428571429
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 339
+    Performance = 339 / 448 = 0.7566964285714286
+------ x ------
+ ------ Computing solutions for instance 0 of generator 3 ------ 
+
+    Optimal solution = 3250
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 299
+    Performance = 299 / 3250 = 0.092
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 2444
+    Performance = 2444 / 3250 = 0.752
+------ x ------
+ ------ Computing solutions for instance 1 of generator 3 ------ 
+
+    Optimal solution = 4679
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4679
+    Performance = 4679 / 4679 = 1.0
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3519
+    Performance = 3519 / 4679 = 0.7520837785851677
+------ x ------
+ ------ Computing solutions for instance 2 of generator 3 ------ 
+
+    Optimal solution = 4071
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 298
+    Performance = 298 / 4071 = 0.07320068779169737
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3061
+    Performance = 3061 / 4071 = 0.7519037091623679
+------ x ------
+ ------ Computing solutions for instance 3 of generator 3 ------ 
+
+    Optimal solution = 4955
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4934
+    Performance = 4934 / 4955 = 0.9957618567103935
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3726
+    Performance = 3726 / 4955 = 0.7519677093844601
+------ x ------
+ ------ Computing solutions for instance 4 of generator 3 ------ 
+
+    Optimal solution = 4400
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 4292
+    Performance = 4292 / 4400 = 0.9754545454545455
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 3310
+    Performance = 3310 / 4400 = 0.7522727272727273
+------ x ------
+ ------ Computing solutions for instance 0 of generator 4 ------ 
+
+    Optimal solution = 75177
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3984
+    Performance = 3984 / 75177 = 0.05299493196057305
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 56394
+    Performance = 56394 / 75177 = 0.750149646833473
+------ x ------
+ ------ Computing solutions for instance 1 of generator 4 ------ 
+
+    Optimal solution = 75406
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3990
+    Performance = 3990 / 75406 = 0.05291356125507254
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 56565
+    Performance = 56565 / 75406 = 0.7501392462138291
+------ x ------
+ ------ Computing solutions for instance 2 of generator 4 ------ 
+
+    Optimal solution = 55964
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3994
+    Performance = 3994 / 55964 = 0.0713673075548567
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 41980
+    Performance = 41980 / 55964 = 0.7501250804088343
+------ x ------
+ ------ Computing solutions for instance 3 of generator 4 ------ 
+
+    Optimal solution = 71496
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3998
+    Performance = 3998 / 71496 = 0.05591921226362314
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 53632
+    Performance = 53632 / 71496 = 0.7501398679646414
+------ x ------
+ ------ Computing solutions for instance 4 of generator 4 ------ 
+
+    Optimal solution = 58350
+
+  The computed solution is (using a greedy algorithm):
+    Total value = 3999
+    Performance = 3999 / 58350 = 0.06853470437017994
+
+  The computed solution  is (using dynamic programming with ):
+    Total value = 43770
+    Performance = 43770 / 58350 = 0.7501285347043701
+------ x ------
+Greedy algorithm accuracy performance average: 0.5542660475026654
+Greedy algorithm time performance average: 96775
+Dynamic programming algorithm accuracy performance average: 0.7519310503861644
+Dynamic programming algorithm time performance average: 249025

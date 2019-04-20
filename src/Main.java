@@ -1,4 +1,7 @@
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.math.BigInteger;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.*;
@@ -25,7 +28,7 @@ public class Main {
             parsed.setValue(jsonObject.getInt("limit"));
 
             JSONArray objects = jsonObject.getJSONArray("set");
-            objects.forEach(object -> parsed.key.add(new KnapsackObject(((JSONObject) object).getInt("weight"),
+            objects.forEach(object -> parsed.key().add(new KnapsackObject(((JSONObject) object).getInt("weight"),
                     ((JSONObject) object).getInt("value"))));
 
             return parsed;
@@ -35,8 +38,7 @@ public class Main {
         }
     }
 
-    private static int greedyAlgorithm01Knapsack(List<KnapsackObject> objects, int limit, int instance) {
-
+    private static int greedy01Knapsack(List<KnapsackObject> objects, int limit) {
         Set<KnapsackObject> solution = new HashSet<>(objects.size());
         TreeMap<Float, KnapsackObject> sortedObjects = new TreeMap<>((x, y) -> x < y ? 1 : x.equals(y) ? 0 : -1);
 
@@ -67,24 +69,28 @@ public class Main {
         });
 
         if(maxValue.get() > currentWeight.get()) {
-            System.out.println("  The computed solution for instance " + instance + " is (using a greedy algorithm):");
-            System.out.print("    { weight: " + maxObject.get().weight() +
-                    " }, { value: " + maxObject.get().value() + " }");
+            // System.out.print("    { weight: " + maxObject.get().weight() +
+            //      " }, { value: " + maxObject.get().value() + " }");
 
             // Space and time complexity - O(1)
             return maxObject.get().value();
         } else {
-            System.out.println("  The computed solution for instance " + instance + " is (using a greedy algorithm):");
-            solution.forEach(object -> System.out.print("    \n{ weight: " + object.weight() +
-                    " }, { value: " + object.value() + " }"));
+            // solution.forEach(object -> System.out.print("    \n{ weight: " + object.weight() +
+            //      " }, { value: " + object.value() + " }"));
 
             // Space and time complexity - O(1)
             return currentValue.get();
         }
     }
 
+    private static int dynamicPoly01Knapsack(List<KnapsackObject> objects, double precision, int limit) {
+        List<KnapsackObject> rounded = roundValues(objects, precision);
+
+        return dynamic01Knapsack(rounded, limit);
+    }
+
     @SuppressWarnings("all")
-    private static int dynamic01Knapsack(List<KnapsackObject> objects, int limit, int instance) {
+    private static int dynamic01Knapsack(List<KnapsackObject> objects, int limit) {
 
         // Note: Since used list is ArrayList, all get operations of the list are O(1) in time complexity
 
@@ -146,47 +152,100 @@ public class Main {
                 break;
         }
 
-
-        System.out.println("\n\n  The computed solution for instance " + instance + " is (using dynamic programming):");
-        solution.forEach(object -> System.out.print("    { weight: " + object.weight() +
-                " }, { value: " + object.value() + " }\n"));
+        // solution.forEach(object -> System.out.print("    { weight: " + object.weight() +
+        //      " }, { value: " + object.value() + " }\n"));
 
         // Space and time complexity - O(1)
         return dynamicTable[objects.size()][limit];
     }
 
+    private static List<KnapsackObject> roundValues(List<KnapsackObject> objects, double precision) {
+        List<KnapsackObject> rounded = new ArrayList<>();
+
+        objects.forEach(object -> rounded.add(new KnapsackObject(object.weight(), (int) Math.ceil(object.value() * precision))));
+
+        return rounded;
+    }
+
     public static void main(String[] args)
             throws Exception {
 
-        for(int i = 1; i < 3; i++) {
-            Pair<List<KnapsackObject>, Integer> parsed = parseSetFromJSON("instances/instance" + i + ".json");
-            System.out.println(" ------ Computing solutions for instance " + i + " ------ \n");
-            System.out.println("\n    Total value = " + greedyAlgorithm01Knapsack(parsed.key(), parsed.value(), i));
-            System.out.println("    Total value = " + dynamic01Knapsack(parsed.key(), parsed.value(), i));
-            System.out.println("\n\n ------ x ------");
+        // This part of the code generates the test instances
+        // You have to move the files to the "instances" directory after generated
+        /*
+        InstanceGenerator gen1 = new InstanceGenerator(6, 30, 500, 1);
+        InstanceGenerator gen2 = new InstanceGenerator(20, 800, 150, 2);
+        InstanceGenerator gen3 = new InstanceGenerator(400, 500, 300, 3);
+        InstanceGenerator gen4 = new InstanceGenerator(600, 150, 4000, 4);
+
+        for(int i = 0; i < 5; i++) {
+            gen1.generate();
+            gen2.generate();
+            gen3.generate();
+            gen4.generate();
         }
-    }
+        */
 
-    static class Pair<K, V> {
+        // Statistics
+        double greedyAccuracyAvg = 0;
+        double dynamicAccuracyAvg = 0;
+        long greedyTimeAvg = 0;
+        long dynamicTimeAvg = 0;
 
-        private K key;
-        private V value;
+        // Some parameters for the test, have to be in accordance with the instance files
+        final int numberOfGenerators = 4;
+        final int numberOfInstancesPerGenerator = 5;
+        final int reps = 10; // Repeat for consistency reasons
 
-        Pair(K key, V value) {
-            this.key = key;
-            this.value = value;
-        }
+        PrintWriter writer = new PrintWriter("output.txt", StandardCharsets.UTF_8);
 
-        K key() {
-            return key;
-        }
+        // This is just so the PrintWriter is ready, or else it won't write anything
+        Thread.sleep(2000);
 
-        V value() {
-            return value;
-        }
+        for(int x = 0; x < reps; x++)
+            for(int i = 1; i <= numberOfGenerators; i++)
+                for(int j = 0; j < numberOfInstancesPerGenerator; j++) {
+                    Pair<List<KnapsackObject>, Integer> parsed = parseSetFromJSON("instances/gen" + i + "instance" + j + ".json");
+                    writer.println(" ------ Computing solutions for instance " + j + " of generator " + i +  " ------ \n");
 
-        void setValue(V value) {
-            this.value = value;
-        }
+                    int optimalSolution = dynamic01Knapsack(parsed.key(), parsed.value());
+                    writer.println("    Optimal solution = " + optimalSolution);
+
+                    long timer = System.nanoTime();
+                    int greedySolution = greedy01Knapsack(parsed.key(), parsed.value());
+                    greedyTimeAvg += System.nanoTime() - timer;
+
+                    writer.println("\n  The computed solution is (using a greedy algorithm):");
+                    writer.println("    Total value = " + greedySolution);
+
+                    double performance = (1.0 * greedySolution) / optimalSolution;
+                    writer.println("    Performance = " + greedySolution + " / " + optimalSolution + " = " + performance);
+                    greedyAccuracyAvg += performance;
+
+                    timer = System.nanoTime();
+                    int dynamicPolySolution = dynamicPoly01Knapsack(parsed.key(), 0.75, parsed.value());
+                    dynamicTimeAvg += System.nanoTime() - timer;
+
+                    writer.println("\n  The computed solution  is (using dynamic programming with ):");
+                    writer.println("    Total value = " + dynamicPolySolution);
+
+                    performance = (1.0 * dynamicPolySolution) / optimalSolution;
+                    writer.println("    Performance = " + dynamicPolySolution + " / " + optimalSolution + " = " + performance);
+                    dynamicAccuracyAvg += performance;
+
+                    writer.println("------ x ------");
+                }
+
+        greedyAccuracyAvg /= numberOfGenerators * numberOfInstancesPerGenerator * reps;
+        dynamicAccuracyAvg /= numberOfGenerators * numberOfInstancesPerGenerator * reps;
+        greedyTimeAvg /= numberOfGenerators * numberOfInstancesPerGenerator * reps;
+        dynamicTimeAvg /= numberOfGenerators * numberOfInstancesPerGenerator * reps;
+
+        writer.println("Greedy algorithm accuracy performance average: " + greedyAccuracyAvg);
+        writer.println("Greedy algorithm time performance average: " + greedyTimeAvg);
+        writer.println("Dynamic programming algorithm accuracy performance average: " + dynamicAccuracyAvg);
+        writer.println("Dynamic programming algorithm time performance average: " + dynamicTimeAvg);
+
+        writer.close();
     }
 }
