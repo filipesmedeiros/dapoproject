@@ -1,86 +1,86 @@
 {
-  "limit":346,
+  "limit":673,
   "objectNumber":20,
   "set": [
     {
-      "weight":247,
-      "value":20
+      "weight":22,
+      "value":120
     },
     {
-      "weight":177,
-      "value":8
+      "weight":256,
+      "value":84
     },
     {
-      "weight":287,
-      "value":127
+      "weight":624,
+      "value":80
     },
     {
-      "weight":61,
-      "value":125
+      "weight":445,
+      "value":121
     },
     {
-      "weight":237,
-      "value":12
+      "weight":423,
+      "value":144
     },
     {
-      "weight":29,
-      "value":16
+      "weight":657,
+      "value":102
     },
     {
-      "weight":110,
-      "value":38
+      "weight":663,
+      "value":149
     },
     {
-      "weight":65,
-      "value":4
+      "weight":10,
+      "value":101
     },
     {
-      "weight":120,
-      "value":112
+      "weight":500,
+      "value":107
     },
     {
-      "weight":218,
-      "value":1
+      "weight":494,
+      "value":74
     },
     {
-      "weight":109,
-      "value":52
+      "weight":571,
+      "value":62
     },
     {
-      "weight":226,
-      "value":63
+      "weight":36,
+      "value":67
     },
     {
-      "weight":335,
-      "value":7
+      "weight":228,
+      "value":116
     },
     {
-      "weight":188,
-      "value":72
+      "weight":403,
+      "value":134
     },
     {
-      "weight":277,
-      "value":91
-    },
-    {
-      "weight":275,
+      "weight":500,
       "value":75
     },
     {
-      "weight":261,
-      "value":96
+      "weight":98,
+      "value":98
     },
     {
-      "weight":2,
-      "value":133
+      "weight":334,
+      "value":71
     },
     {
-      "weight":218,
-      "value":36
+      "weight":639,
+      "value":11
     },
     {
-      "weight":7,
-      "value":90
+      "weight":329,
+      "value":110
+    },
+    {
+      "weight":91,
+      "value":129
     }
   ]
 }

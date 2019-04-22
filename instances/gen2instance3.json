@@ -1,86 +1,86 @@
 {
-  "limit":600,
+  "limit":457,
   "objectNumber":20,
   "set": [
     {
-      "weight":256,
-      "value":4
+      "weight":8,
+      "value":18
     },
     {
-      "weight":93,
-      "value":114
+      "weight":432,
+      "value":113
     },
     {
-      "weight":91,
-      "value":81
+      "weight":231,
+      "value":120
     },
     {
-      "weight":70,
-      "value":139
+      "weight":140,
+      "value":59
     },
     {
-      "weight":524,
-      "value":143
+      "weight":427,
+      "value":8
     },
     {
-      "weight":519,
-      "value":24
+      "weight":432,
+      "value":41
     },
     {
-      "weight":294,
-      "value":148
+      "weight":327,
+      "value":88
     },
     {
-      "weight":530,
+      "weight":156,
+      "value":113
+    },
+    {
+      "weight":305,
+      "value":105
+    },
+    {
+      "weight":230,
+      "value":23
+    },
+    {
+      "weight":127,
+      "value":23
+    },
+    {
+      "weight":281,
+      "value":56
+    },
+    {
+      "weight":380,
+      "value":53
+    },
+    {
+      "weight":197,
+      "value":89
+    },
+    {
+      "weight":455,
+      "value":74
+    },
+    {
+      "weight":216,
+      "value":144
+    },
+    {
+      "weight":108,
       "value":71
     },
     {
-      "weight":111,
-      "value":100
+      "weight":185,
+      "value":9
+    },
+    {
+      "weight":204,
+      "value":101
     },
     {
       "weight":117,
-      "value":118
-    },
-    {
-      "weight":193,
-      "value":110
-    },
-    {
-      "weight":490,
-      "value":142
-    },
-    {
-      "weight":424,
-      "value":83
-    },
-    {
-      "weight":116,
-      "value":138
-    },
-    {
-      "weight":8,
-      "value":42
-    },
-    {
-      "weight":67,
-      "value":141
-    },
-    {
-      "weight":283,
-      "value":139
-    },
-    {
-      "weight":475,
-      "value":110
-    },
-    {
-      "weight":420,
-      "value":106
-    },
-    {
-      "weight":499,
-      "value":80
+      "value":136
     }
   ]
 }

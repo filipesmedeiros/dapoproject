@@ -1,6 +1,5 @@
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -33,7 +32,7 @@ public class Main {
 
             return parsed;
         } catch(IOException e) {
-            System.out.println("Error reading JSON file");
+            // System.out.println("Error reading JSON file");
             throw new Exception();
         }
     }
@@ -48,49 +47,120 @@ public class Main {
         objects.forEach(object -> sortedObjects.put(1.0f * object.value() / object.weight(), object));
 
         // Constant time and space complexity | these help with the forEach loop
-        AtomicReference<Integer> currentWeight = new AtomicReference<>(0);
-        AtomicReference<Integer> currentValue = new AtomicReference<>(0);
-        AtomicReference<Integer> maxValue = new AtomicReference<>(0);
-        AtomicReference<KnapsackObject> maxObject = new AtomicReference<>(null);
+        AtomicReference<Long> currentWeight = new AtomicReference<>(0L);
+        AtomicReference<Long> currentValue = new AtomicReference<>(0L);
+        AtomicReference<Long> maxValue = new AtomicReference<>(0L);
 
         // Linear time and space complexity - O(n) where n = number of objects
         // All operations inside are constant in time and space
         sortedObjects.forEach((profit, object) -> {
             if(currentWeight.get() + object.weight() <= limit) {
-                currentWeight.accumulateAndGet(object.weight(), (x, y) -> x + y);
+                currentWeight.accumulateAndGet((long) object.weight(), (x, y) -> x + y);
                 // solution.add(object);
-                currentValue.accumulateAndGet(object.value(), (x, y) -> x + y);
+                currentValue.accumulateAndGet((long) object.value(), (x, y) -> x + y);
             }
 
             if(object.weight() <= limit && object.value() > maxValue.get()) {
-                maxValue.set(object.value());
-                maxObject.set(object);
+                maxValue.set((long) object.value());
             }
         });
 
-        if(maxValue.get() > currentWeight.get()) {
-            // System.out.print("    { weight: " + maxObject.get().weight() +
+        if(maxValue.get() > currentValue.get()) {
+            // // System.out.print("    { weight: " + maxObject.get().weight() +
             //      " }, { value: " + maxObject.get().value() + " }");
 
             // Space and time complexity - O(1)
-            return maxObject.get().value();
+            return Math.toIntExact(maxValue.get());
         } else {
-            // solution.forEach(object -> System.out.print("    \n{ weight: " + object.weight() +
+            // solution.forEach(object -> // System.out.print("    \n{ weight: " + object.weight() +
             //      " }, { value: " + object.value() + " }"));
 
             // Space and time complexity - O(1)
-            return currentValue.get();
+            return Math.toIntExact(currentValue.get());
         }
     }
 
-    private static int dynamicPoly01Knapsack(List<KnapsackObject> objects, double precision, int limit) {
-        List<KnapsackObject> rounded = roundValues(objects, precision);
+    private static Pair<List<KnapsackObject>, Integer> roundValuesAndGetSum(List<KnapsackObject> objects, double precision) {
+        // Time complexity - O(1)
+        // Space complexity - O(n) where n = number of objects, but in reality the original list could be altered
+        List<KnapsackObject> rounded = new ArrayList<>(objects.size());
 
-        return dynamic01Knapsack(rounded, limit);
+        // Time and space complexity - O(1)
+        AtomicReference<Integer> valueSum = new AtomicReference<>(0);
+        AtomicReference<Integer> highestValue = new AtomicReference<>(0);
+
+        // Time complexity - O(n) where n = number of objects
+        objects.forEach(object -> {
+            valueSum.accumulateAndGet(object.value(), (x, y) -> x + y);
+            highestValue.set(Math.max(highestValue.get(), object.value()));
+        });
+
+        // Calculating the scale factor
+        final double scale = precision * highestValue.get() / objects.size();
+
+        // System.out.println("scale -> " + scale);
+
+        if(scale < 1)
+            return new Pair<>(objects, valueSum.get());
+
+        // Time complexity - O(n) where n = number of objects
+        objects.forEach(object -> {
+            KnapsackObject newObject = new KnapsackObject(object.weight(),
+                    (int) Math.ceil(object.value() / scale));
+            rounded.add(newObject);
+        });
+
+        return new Pair<>(rounded, valueSum.get());
     }
 
     @SuppressWarnings("all")
-    private static int dynamic01Knapsack(List<KnapsackObject> objects, int limit) {
+    private static int dynamicPolyKnapsack(List<KnapsackObject> objects, double precision, int limit) {
+        Pair<List<KnapsackObject>, Integer> info = roundValuesAndGetSum(objects, precision);
+        List<KnapsackObject> rounded = info.key();
+        int valueSum = info.value();
+
+        // System.out.println("dimension 1 -> " + (rounded.size() + 1));
+        // System.out.println("dimension 2 -> " + (valueSum + 1));
+        // System.out.println("dimension matrix -> " + (1L * rounded.size() * valueSum + 1));
+
+        // This has to be a long matrix because of bit overflow
+        // Space complexity - O(n^2 * maxValue) where n = number of objects in the set
+        // and maxValue the value of the object with the highest value
+        long[][] dynamicTable = new long[rounded.size() + 1][valueSum + 1];
+
+        // Time complexity - O(n) where n = number of objects
+        for(int i = 0; i <= objects.size(); i++)
+            dynamicTable[i][0] = 0;
+
+        // Time complexity - O(SV) where SV = sum of all values of the objects in the set
+        for(int i = 1; i <= valueSum; i++)
+            dynamicTable[0][i] = Integer.MAX_VALUE;
+
+        // Since the sum of all values is never greater than n * maxValue, then
+        // Time complexity - O(n^2 * maxValue) where n = number of objects in the set
+        // and maxValue the value of the object with the highest value
+        // Because of the rounding made before, this complexity can be written as
+        // O(n^3 / precision)
+        for(int i = 1; i <= rounded.size(); i++) {
+            KnapsackObject object = rounded.get(i - 1);
+            for(int j = 1; j <= object.value() - 1; j++)
+                dynamicTable[i][j] = dynamicTable[i - 1][j];
+            for(int j = object.value(); j <= valueSum; j++)
+                dynamicTable[i][j] = Math.min(object.weight() + dynamicTable[i - 1][j - object.value()],
+                        dynamicTable[i - 1][j]);
+        }
+
+        // Time complexity - O(n * maxValue) where n = number of objects in the set
+        // and maxValue the value of the object with the highest value
+        for(int i = valueSum; i >= 1; i--)
+            if(dynamicTable[objects.size()][i] <= limit)
+                return i;
+
+        return 0;
+    }
+
+    @SuppressWarnings("all")
+    private static int exactDynamicKnapsack(List<KnapsackObject> objects, int limit) {
 
         // Note: Since used list is ArrayList, all get operations of the list are O(1) in time complexity
 
@@ -152,19 +222,11 @@ public class Main {
                 break;
         }
 
-        // solution.forEach(object -> System.out.print("    { weight: " + object.weight() +
+        // solution.forEach(object -> // System.out.print("    { weight: " + object.weight() +
         //      " }, { value: " + object.value() + " }\n"));
 
         // Space and time complexity - O(1)
         return dynamicTable[objects.size()][limit];
-    }
-
-    private static List<KnapsackObject> roundValues(List<KnapsackObject> objects, double precision) {
-        List<KnapsackObject> rounded = new ArrayList<>();
-
-        objects.forEach(object -> rounded.add(new KnapsackObject(object.weight(), (int) Math.ceil(object.value() * precision))));
-
-        return rounded;
     }
 
     public static void main(String[] args)
@@ -175,8 +237,8 @@ public class Main {
         /*
         InstanceGenerator gen1 = new InstanceGenerator(6, 30, 500, 1);
         InstanceGenerator gen2 = new InstanceGenerator(20, 800, 150, 2);
-        InstanceGenerator gen3 = new InstanceGenerator(400, 500, 300, 3);
-        InstanceGenerator gen4 = new InstanceGenerator(600, 150, 4000, 4);
+        InstanceGenerator gen3 = new InstanceGenerator(16, 500, 30000, 3);
+        InstanceGenerator gen4 = new InstanceGenerator(12, 150, 4000000, 4);
 
         for(int i = 0; i < 5; i++) {
             gen1.generate();
@@ -185,6 +247,8 @@ public class Main {
             gen4.generate();
         }
         */
+
+        // /*
 
         // Statistics
         double greedyAccuracyAvg = 0;
@@ -195,7 +259,7 @@ public class Main {
         // Some parameters for the test, have to be in accordance with the instance files
         final int numberOfGenerators = 4;
         final int numberOfInstancesPerGenerator = 5;
-        final int reps = 10; // Repeat for consistency reasons
+        final int reps = 1; // Repeat for consistency reasons
 
         PrintWriter writer = new PrintWriter("output.txt", StandardCharsets.UTF_8);
 
@@ -208,12 +272,16 @@ public class Main {
                     Pair<List<KnapsackObject>, Integer> parsed = parseSetFromJSON("instances/gen" + i + "instance" + j + ".json");
                     writer.println(" ------ Computing solutions for instance " + j + " of generator " + i +  " ------ \n");
 
-                    int optimalSolution = dynamic01Knapsack(parsed.key(), parsed.value());
+                    int optimalSolution = exactDynamicKnapsack(parsed.key(), parsed.value());
                     writer.println("    Optimal solution = " + optimalSolution);
+
+                    // System.out.println("calced optimal");
 
                     long timer = System.nanoTime();
                     int greedySolution = greedy01Knapsack(parsed.key(), parsed.value());
                     greedyTimeAvg += System.nanoTime() - timer;
+
+                    // System.out.println("calced greedy");
 
                     writer.println("\n  The computed solution is (using a greedy algorithm):");
                     writer.println("    Total value = " + greedySolution);
@@ -223,10 +291,12 @@ public class Main {
                     greedyAccuracyAvg += performance;
 
                     timer = System.nanoTime();
-                    int dynamicPolySolution = dynamicPoly01Knapsack(parsed.key(), 0.75, parsed.value());
+                    int dynamicPolySolution = dynamicPolyKnapsack(parsed.key(), 0.2, parsed.value());
                     dynamicTimeAvg += System.nanoTime() - timer;
 
-                    writer.println("\n  The computed solution  is (using dynamic programming with ):");
+                    // System.out.println("calced dynamic");
+
+                    writer.println("\n  The computed solution is (using dynamic programming with 0.25 precision):");
                     writer.println("    Total value = " + dynamicPolySolution);
 
                     performance = (1.0 * dynamicPolySolution) / optimalSolution;
@@ -247,5 +317,7 @@ public class Main {
         writer.println("Dynamic programming algorithm time performance average: " + dynamicTimeAvg);
 
         writer.close();
+
+        // */
     }
 }
