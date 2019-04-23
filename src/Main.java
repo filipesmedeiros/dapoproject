@@ -259,7 +259,7 @@ public class Main {
         // Some parameters for the test, have to be in accordance with the instance files
         final int numberOfGenerators = 4;
         final int numberOfInstancesPerGenerator = 5;
-        final int reps = 1; // Repeat for consistency reasons
+        final int reps = 10; // Repeat for consistency reasons
 
         PrintWriter writer = new PrintWriter("output.txt", StandardCharsets.UTF_8);
 
