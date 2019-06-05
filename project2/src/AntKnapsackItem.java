@@ -8,16 +8,16 @@ public class AntKnapsackItem {
     private double pheromoneLevel;
     private double interest;
 
-    public AntKnapsackItem(int weight, int value,
+    AntKnapsackItem(int weight, int value,
                            BiFunction<Integer, Integer, Double> interestFunction) {
 
         this.weight = weight;
         this.value = value;
-        this.pheromoneLevel = 0;
+        this.pheromoneLevel = 1;
         this.interest = interestFunction.apply(weight, value);
     }
 
-    public double increasePheronomeLevel(double by) {
+    double increasePheronomeLevel(double by) {
         return pheromoneLevel += by;
     }
 
@@ -25,23 +25,27 @@ public class AntKnapsackItem {
         return pheromoneLevel -= by;
     }
 
-    public double changePheromoneLevel(Function<Double, Double> function) {
+    double changePheromoneLevel(Function<Double, Double> function) {
         return pheromoneLevel = function.apply(this.pheromoneLevel);
     }
 
-    public int weight() {
+    void setPheromoneLevel(double pheromoneLevel) {
+        this.pheromoneLevel = pheromoneLevel;
+    }
+
+    int weight() {
         return weight;
     }
 
-    public int value() {
+    int value() {
         return value;
     }
 
-    public double pheromoneLevel() {
+    double pheromoneLevel() {
         return pheromoneLevel;
     }
 
-    public double interest() {
+    double interest() {
         return interest;
     }
 }
