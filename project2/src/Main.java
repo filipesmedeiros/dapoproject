@@ -11,7 +11,6 @@ public class Main {
     private static int capacity;
     private static List<AntKnapsackItem> itemList;
     private static List<Ant> antList;
-    private static double bestValue;
 
     private static void readInput(String fileName) throws IOException {
         int[] weights;
@@ -26,16 +25,10 @@ public class Main {
         Iterator<String> iterator = lines.iterator();
         iterator.next();
         int index = 0;
-        bestValue = 0;
         while(iterator.hasNext()) {
             String[] line = iterator.next().split(" ");
             weights[index] = Integer.parseInt(line[0]);
             values[index] = Integer.parseInt(line[1]);
-
-            double value = values[index] * 1.0 / Math.pow(weights[index], 2.0);
-            if(bestValue < value)
-                bestValue = value;
-
             index++;
         }
 
@@ -62,7 +55,7 @@ public class Main {
     }
 
     private static void solve(double ro, double tauMax, double tauMin, int iterations) {
-        int globalBest = 0;
+        int globalBest = 1000;
         Boolean[] globalSolution = new Boolean[itemList.size()];
 
         for(int i = 0; i < iterations; i++) {
@@ -78,7 +71,9 @@ public class Main {
                 }
             });
 
-            bestAnt.get().leavePheromones();
+            System.out.println(globalBest);
+
+            bestAnt.get().leavePheromones(globalBest);
             bestAnt.get().resetAnt(capacity);
 
             if(globalBest < tempBest.get()) {
@@ -89,14 +84,14 @@ public class Main {
             evaporate(ro, tauMax, tauMin);
         }
 
-        System.out.println(globalBest);
+        System.out.println("best -> " + globalBest);
 
-        /*
+        
         for(int i = 0; i < globalSolution.length; i++) {
             if(globalSolution[i])
-                System.out.print(i + " ");
+                System.out.print((i + 2) + " ");
         }
-        */
+        
     }
 
     public static void main(String[] args) {
@@ -107,16 +102,16 @@ public class Main {
         }
 
         int numberOfAnts = 5;
-        int numberOfIterations = 5;
+        int numberOfIterations = 30;
         double alpha = 1.0;
         double beta = 2.0;
-        double ro = 0.90;
-        double tauMax = Double.MAX_VALUE;
-        double tauMin = 0.6;
+        double ro = 0.95;
+        double tauMax = 100;
+        double tauMin = 1;
 
         antList = new ArrayList<>(numberOfAnts);
         for(int i = 0; i < numberOfAnts; i++)
-            antList.add(new Ant("Ant " + i, itemList, bestValue, capacity, alpha, beta, tauMax, tauMin));
+            antList.add(new Ant("Ant " + i, itemList, capacity, alpha, beta, tauMax, tauMin));
 
         solve(ro, tauMax, tauMin, numberOfIterations);
     }

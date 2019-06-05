@@ -31,7 +31,7 @@ class InstanceGenerator {
 
         int limit = r.nextInt(weightBound - 1) + 1;
 
-        PrintWriter writer = new PrintWriter("gen" + label + "instance" + instance + ".json", StandardCharsets.UTF_8);
+        PrintWriter writer = new PrintWriter("gen" + label + "instance" + instance + ".json");
 
         writer.println("{");
         writer.println("  \"limit\":" + limit + ",");

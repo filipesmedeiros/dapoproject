@@ -13,7 +13,7 @@ public class AntKnapsackItem {
 
         this.weight = weight;
         this.value = value;
-        this.pheromoneLevel = 1;
+        this.pheromoneLevel = 50;
         this.interest = interestFunction.apply(weight, value);
     }
 

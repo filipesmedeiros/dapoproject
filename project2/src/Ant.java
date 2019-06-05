@@ -10,7 +10,6 @@ class Ant {
     private Boolean[] currentlySelected;
     private final List<AntKnapsackItem> allItems;
     private List<Integer> nextNeighbourhood;
-    private final double bestValue;
 
     private int currentValue;
     private int currentCapacity;
@@ -19,7 +18,7 @@ class Ant {
     private double tauMax;
     private double tauMin;
 
-    Ant(String name, List<AntKnapsackItem> allItems, double bestValue, int capacity,
+    Ant(String name, List<AntKnapsackItem> allItems, int capacity,
         double alpha, double beta, double tauMax, double tauMin) {
         this.name = name;
 
@@ -32,8 +31,6 @@ class Ant {
         nextNeighbourhood = new LinkedList<>();
         for(int i = 0; i < allItems.size(); i++)
             nextNeighbourhood.add(i);
-
-        this.bestValue = bestValue;
 
         currentValue = 0;
         currentCapacity = capacity;
@@ -101,27 +98,32 @@ class Ant {
 
     // Leaves pheromones on items, based on a formula that can vary
     // This formula will be stated in the report
-    void leavePheromones() {
-        System.out.println(name + " x-----------");
+    void leavePheromones(int bestValue) {
+    	int solutionValue = 0;
+    	for(int i = 0; i < allItems.size(); i++)
+    		if(currentlySelected[i])
+    			solutionValue += allItems.get(i).value();
+    	
+    	System.out.println(solutionValue);
+    	
+    	double pheromoneDelta = solutionValue * 1.0 / bestValue;
+    	
+    	System.out.println("delta -> " + pheromoneDelta);
+    	
         for(int i = 0; i < allItems.size(); i++) {
-            System.out.print("from: " + allItems.get(i).pheromoneLevel());
-
+            AntKnapsackItem item = allItems.get(i);
             if(currentlySelected[i]) {
-                AntKnapsackItem item = allItems.get(i);
-
-                double valueRatio = item.value() * 1.0 / Math.pow(item.weight(), 2.0);
-
-                double pheromoneDelta = 1.0 / (1.0 + ((bestValue - valueRatio) / bestValue));
-
-                double newPheromoneLevel = item.increasePheronomeLevel(pheromoneDelta);
+                double newPheromoneLevel = item.changePheromoneLevel(
+                		pheromoneValue -> pheromoneValue * pheromoneDelta);
                 if (newPheromoneLevel > tauMax)
                     item.setPheromoneLevel(tauMax);
                 else if (newPheromoneLevel < tauMin)
                     item.setPheromoneLevel(tauMin);
             }
-
-            System.out.println(" to: " + allItems.get(i).pheromoneLevel());
+            
+            System.out.print(item.pheromoneLevel() + " ");
         }
+        System.out.println();
     }
 
     // Between iterations, the ants have to be reset
