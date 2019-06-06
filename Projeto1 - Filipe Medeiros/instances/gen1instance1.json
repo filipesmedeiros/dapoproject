@@ -1,0 +1,30 @@
+{
+  "limit":14,
+  "objectNumber":6,
+  "set": [
+    {
+      "weight":5,
+      "value":184
+    },
+    {
+      "weight":7,
+      "value":309
+    },
+    {
+      "weight":5,
+      "value":444
+    },
+    {
+      "weight":1,
+      "value":271
+    },
+    {
+      "weight":3,
+      "value":145
+    },
+    {
+      "weight":5,
+      "value":215
+    }
+  ]
+}
